@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainPageActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -19,6 +28,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="سامانه هوشمند تشخیص بیماری کرونا"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -34,31 +48,46 @@
         android:layout_marginTop="80dp"
         android:layout_marginRight="30dp"/>
 
-
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_centerHorizontal="true"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/image_box_card"
         android:layout_width="280dp"
         android:layout_height="200dp"
-        android:layout_margin="30dp"
-        android:scaleType="centerCrop"
-        android:elevation="12dp"/>
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="12dp">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Take Picture"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="20dp"
-        android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:scaleType="centerCrop" />
+
+    </androidx.cardview.widget.CardView>
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Take Picture" />
 
     <TextView
         android:id="@+id/classified"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
+        android:layout_below="@+id/image_box_card"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:gravity="center"
@@ -102,4 +131,7 @@
         android:textSize="14sp"
         android:textStyle="bold" />
 
+
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>
