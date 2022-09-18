@@ -49,8 +49,7 @@
                 android:src="@drawable/ic_baseline_help_outline_24" />
 
 
-
-            <androidx.cardview.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/image_box_card"
         android:layout_width="220dp"
         android:layout_height="180dp"
@@ -73,17 +72,18 @@
     </androidx.cardview.widget.CardView>
 
 
-    <TextView
-        android:id="@+id/classified"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/image_box_card"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:gravity="center"
-        android:text="Classified as:"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+            <TextView
+                android:id="@+id/classified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_box_card"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="برآورد وضعیت:"
+                android:fontFamily="@font/homa"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
     <TextView
         android:id="@+id/result"
@@ -105,7 +105,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
-                android:text="Confidences:"
+                android:text="درصد احتمال وضعیت:"
+                android:fontFamily="@font/homa"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -121,14 +122,28 @@
             android:textSize="14sp"
             android:textStyle="bold" />
 
-            <Button
+
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/take_pic_btn"
-                android:layout_below="@+id/confidence"
-                android:layout_marginTop="40dp"
+                style="@style/Widget.Material3.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/confidence"
                 android:layout_centerHorizontal="true"
-                android:text="Take Picture" />
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="200dp"
+                android:backgroundTint="@color/teal_200"
+                android:elevation="25dp"
+                android:text="افزودن عکس رادیولوژی"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:fontFamily="@font/homa"
+                app:elevation="25dp"
+                app:iconSize="12dp"
+                app:iconTint="@color/black"
+                app:strokeColor="@color/black"
+                app:strokeWidth="0.2dp" />
 
 
         </RelativeLayout>
