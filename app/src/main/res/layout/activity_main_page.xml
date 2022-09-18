@@ -38,8 +38,8 @@
 
             <ImageButton
                 android:id="@+id/help_image_btn"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="80dp"
                 android:layout_marginRight="30dp"
@@ -67,6 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="12dp"
+            android:src="@drawable/ic_baseline_image_24"
             android:scaleType="centerCrop" />
 
     </androidx.cardview.widget.CardView>
