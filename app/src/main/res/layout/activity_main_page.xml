@@ -37,16 +37,17 @@
     </androidx.appcompat.widget.Toolbar>
 
 
-    <ImageButton
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/ic_baseline_help_outline_24"
-        android:backgroundTint="@color/white"
-        android:background="@color/white"
-        android:scaleType="centerCrop"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="80dp"
-        android:layout_marginRight="30dp"/>
+            <ImageButton
+                android:id="@+id/help_image_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/white"
+                android:backgroundTint="@color/white"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_help_outline_24" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/image_box_card"
@@ -70,14 +71,6 @@
 
     </androidx.cardview.widget.CardView>
 
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_alignParentBottom="true"
-                android:text="Take Picture" />
 
     <TextView
         android:id="@+id/classified"
@@ -115,17 +108,26 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/confidence"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/confidencesText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:gravity="center"
-        android:text=""
-        android:textSize="14sp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/confidence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confidencesText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/take_pic_btn"
+                android:layout_below="@+id/confidence"
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Take Picture" />
 
 
         </RelativeLayout>
