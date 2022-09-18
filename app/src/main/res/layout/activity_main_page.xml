@@ -80,9 +80,9 @@
                 android:layout_below="@+id/image_box_card"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="15dp"
+                android:fontFamily="@font/homa"
                 android:gravity="center"
                 android:text="برآورد وضعیت:"
-                android:fontFamily="@font/homa"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
