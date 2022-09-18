@@ -36,7 +36,6 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-
             <ImageButton
                 android:id="@+id/help_image_btn"
                 android:layout_width="30dp"
@@ -49,7 +48,9 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_baseline_help_outline_24" />
 
-    <androidx.cardview.widget.CardView
+
+
+            <androidx.cardview.widget.CardView
         android:id="@+id/image_box_card"
         android:layout_width="220dp"
         android:layout_height="180dp"
