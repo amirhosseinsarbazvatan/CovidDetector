@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
                 }catch (Exception e){
 
                 }finally {
-                    Intent firstPage = new Intent(MainActivity.this, LoginActivity.class);
+                    Intent firstPage = new Intent(MainActivity.this, MainPageActivity.class);
                     startActivity(firstPage);
                 }
             }
