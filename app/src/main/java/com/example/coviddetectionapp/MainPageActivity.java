@@ -135,7 +135,7 @@ public class MainPageActivity extends AppCompatActivity {
             model.close();
         } catch (IOException e) {
             // TODO Handle the exception
-        }
+        }//
 
     }
 
