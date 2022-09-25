@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/grey_light"
     tools:context=".MainPageActivity">
 
     <ScrollView
@@ -43,8 +44,8 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="80dp"
                 android:layout_marginRight="30dp"
-                android:background="@color/white"
-                android:backgroundTint="@color/white"
+                android:background="@color/grey_light"
+                android:backgroundTint="@color/grey_light"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_baseline_help_outline_24" />
 
