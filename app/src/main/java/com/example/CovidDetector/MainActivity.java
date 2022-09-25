@@ -1,4 +1,4 @@
-package com.example.coviddetectionapp;
+package com.example.CovidDetector;
 
 import androidx.appcompat.app.AppCompatActivity;
 

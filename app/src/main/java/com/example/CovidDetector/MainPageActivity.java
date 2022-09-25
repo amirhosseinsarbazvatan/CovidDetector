@@ -1,4 +1,4 @@
-package com.example.coviddetectionapp;
+package com.example.CovidDetector;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,7 +17,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.coviddetectionapp.ml.ModelUnquant;
+import com.example.CovidDetector.ml.ModelUnquant;
 
 import org.tensorflow.lite.DataType;
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
