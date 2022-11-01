@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey">
+
+    <TextView
+        android:id="@+id/title_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="How to use smart Covid detector?"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/description_dialog"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_dialog"
+        android:justificationMode="inter_word"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="This application has been developed in order to identify the covid disease using chest radiology images of patients based on artificial intelligence. To use the add photo button first, enter your radiology image so that the system will check it and provide the answer based on certainty and percentage of probability."
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+</RelativeLayout>
