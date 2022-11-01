@@ -16,26 +16,26 @@
             android:layout_height="match_parent">
 
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="12dp"
-        android:background="@drawable/toolbar"
-        android:elevation="4dp">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/toolbar"
+                android:elevation="4dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="سامانه هوشمند تشخیص بیماری کرونا"
-            android:textStyle="bold"
-            android:textSize="16sp"
-            android:layout_gravity="center"
-            android:gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Smart Covid Detector"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
-    </androidx.appcompat.widget.Toolbar>
+            </androidx.appcompat.widget.Toolbar>
 
             <ImageButton
                 android:id="@+id/help_image_btn"
@@ -83,7 +83,7 @@
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/homa"
                 android:gravity="center"
-                android:text="برآورد وضعیت:"
+                android:text="Estimate situation:"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -106,9 +106,9 @@
                 android:layout_below="@+id/result"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:gravity="center"
-                android:text="درصد احتمال وضعیت:"
                 android:fontFamily="@font/homa"
+                android:gravity="center"
+                android:text="Certainty percentage:"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -136,11 +136,11 @@
                 android:layout_marginBottom="200dp"
                 android:backgroundTint="@color/teal_200"
                 android:elevation="25dp"
-                android:text="افزودن عکس رادیولوژی"
+                android:fontFamily="@font/homa"
+                android:text="Add Radiology Photo"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="normal"
-                android:fontFamily="@font/homa"
                 app:elevation="25dp"
                 app:iconSize="12dp"
                 app:iconTint="@color/black"

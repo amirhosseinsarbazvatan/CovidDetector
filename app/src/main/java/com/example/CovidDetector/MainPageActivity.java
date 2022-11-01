@@ -2,6 +2,7 @@ package com.example.CovidDetector;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 
@@ -13,8 +14,10 @@ import android.media.ThumbnailUtils;
 import android.os.Build;
 import android.os.Bundle;
 import android.renderscript.Element;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,6 +32,8 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
+
+
 public class MainPageActivity extends AppCompatActivity {
 
 
@@ -38,6 +43,7 @@ public class MainPageActivity extends AppCompatActivity {
     ImageView imageView;
     TextView result, confidence;
     Button picture;
+    ImageButton help_image_btn;
 
     int imageSize = 224;
 
@@ -50,6 +56,19 @@ public class MainPageActivity extends AppCompatActivity {
         result = findViewById(R.id.result);
         confidence = findViewById(R.id.confidence);
         picture = findViewById(R.id.take_pic_btn);
+        help_image_btn = findViewById(R.id.help_image_btn);
+
+
+        help_image_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainPageActivity.this);
+                LayoutInflater inflater = MainPageActivity.this.getLayoutInflater();
+                View dialogView = inflater.inflate(R.layout.dialog, null);
+                builder.setView(dialogView).create().show();
+            }
+        });
+
 
         picture.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -125,7 +144,7 @@ public class MainPageActivity extends AppCompatActivity {
                     maxPos = i;
                 }
             }
-            String[] classes = {"مبتلا به کرونا" , "عدم ابتلا و سالم" };
+            String[] classes = {"Covid detected" , "No covid effect" };
             result.setText(classes[maxPos]);
 
             String s = "";
